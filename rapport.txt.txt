@@ -1,0 +1,32 @@
+Mesures de Cybersécurité - Explications
+1. HTTPS (SSL/TLS)
+Objectif: Chiffrer les communications entre le client et le serveur pour protéger les données en transit.
+Obtention et configuration d'un certificat SSL/TLS pour le site web.
+2. Mots de passe Robustes
+Objectif: Renforcer la sécurité des comptes utilisateurs.
+Exiger des mots de passe avec une combinaison de lettres, chiffres, et caractères spéciaux.
+Utilisation de l'algorithme de hachage bcrypt pour stocker les mots de passe côté serveur.
+3. Protection contre les Injections SQL
+Objectif: Prévenir les attaques par injection SQL.
+Utilisation de requêtes préparées ou de procédures stockées pour interagir avec la base de données.
+Validation et filtrage des entrées utilisateur pour éviter les attaques par injection.
+4. Protection contre les Attaques XSS
+Objectif: Empêcher l'injection de scripts malveillants dans les pages web.
+Validation et échappement des données utilisateur lors de l'affichage.
+Utilisation de directives de sécurité des contenus (Content Security Policy - CSP) pour restreindre l'exécution de scripts.
+5. Protection contre les Attaques CSRF
+Objectif: Empêcher les attaques de falsification de requête inter-site.
+Utilisation de jetons anti-CSRF dans les formulaires.
+Vérification de l'origine des requêtes pour prévenir les attaques CSRF.
+6. Sécurité des Sessions
+Objectif: Assurer une gestion sécurisée des sessions utilisateur.
+Utilisation de jetons de session sécurisés.
+Configuration d'un timeout de session et régénération régulière des identifiants de session.
+7. Sécurité des Fichiers Téléchargés
+Objectif: Empêcher les téléchargements de fichiers malveillants.
+Validation des types de fichiers autorisés.
+Analyse des fichiers téléchargés pour détecter les malwares.
+8. Gestion des API
+Objectif: Sécuriser les points d'accès de l'API.
+Utilisation d'authentification robuste (clés API, OAuth).
+Validation et limitation des requêtes API.
